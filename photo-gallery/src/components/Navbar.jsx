@@ -12,7 +12,12 @@ import navItems from "./img";
 export default function Navbar() {
   return (
     <>
-      <div style={{ height: "500px" }}>
+      <div style={{
+    
+        overflow:'hidden',
+        backgroundColor: '#353e42',  
+      marginTop:"-10px"
+      }}>
         
         <Carousel
           showArrows={true}
@@ -26,7 +31,7 @@ export default function Navbar() {
           {navItems.map((item, index) => (
             <div key={index}>
               <img src={item.imageUrl} />
-              <p style={{ marginTop: "10px",color:item.color}}>{item.title}</p>
+              <p style={{ marginTop: "15px",color:item.color,height:"50px",lineHeight:"50px"}}>{item.title}</p>
             </div>
           ))}
         </Carousel>

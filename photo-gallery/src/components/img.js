@@ -2,7 +2,7 @@ const navItems = [
   {
     title: "海豹，在歌唱",
     imageUrl: "/img/home-bg.png",
-    color: "#034c69",
+    color: "#11dcde",
   },
   {
     title: "你要杀了我吗？朋友",
@@ -12,11 +12,11 @@ const navItems = [
     {
     title: "回归大群",
     imageUrl: "/img/3.png",
-    color: "#0061c6",
+    color: "#d5f5e5",
   },    {
     title: "回归大群",
     imageUrl: "/img/4.png",
-    color: "#004c98",
+    color: "#d5f5e5",
   },
 ];
 

@@ -1,10 +1,13 @@
-import Navbar from "../components/Navbar"
+import Navbar from "../components/Navbar";
+import "../components/style.css"
 export default function Show() {
-    return (
-        <div>
-            <p style={{ textAlign: "center", margin: "10px auto",width:'200px',fontSize:'20px' }}>枫丹摄影展</p>
-           
-            <Navbar />
-        </div>
-    )
+  return (
+      <div>
+      <p className="genshin">
+        枫丹摄影展
+      </p>
+
+      <Navbar />
+    </div>
+  );
 }
