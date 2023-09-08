@@ -261,6 +261,7 @@
 
 .carousel .slide img {
   width: 80%;
+  height: 70%;
   vertical-align: top;
   border: 4px solid white;
   box-shadow: 1px 1px 25px 1px #30e7ff;
