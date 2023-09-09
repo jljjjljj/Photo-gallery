@@ -13,10 +13,10 @@ const dividerStyle = {
 const Div = styled("div")(({ theme }) => ({
   ...theme.typography.button,
   backdropFilter: "blur(15px)",
-  padding: theme.spacing(5),
-  width: "800px",
+  padding: theme.spacing(2),
+marginTop:'65px',
   textAlign: "center",
-  fontSize: 48,
+  fontSize: 40,
   fontWeight: 700,
   color: "white",
 }));
@@ -33,7 +33,7 @@ export default function Home() {
         style={{
           height: "100vh",
           overflow: "hidden",
-          backgroundImage: 'url("/img/bg4.gif")',
+          backgroundImage: 'url("/img/ass1.jpg")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -57,7 +57,7 @@ export default function Home() {
                 width: "200px",
                 height: "60px",
                 fontSize: "18px",
-                backgroundColor: "#1198d8",
+                backgroundColor: "#E91E63",
               }}
               onClick={handleClick}
             >
