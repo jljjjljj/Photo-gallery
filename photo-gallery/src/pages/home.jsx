@@ -31,10 +31,7 @@ export default function Home() {
       <Container
         maxWidth="xl"
         style={{
-          width: "100%",
-          height: "800px",
-          minWidth: "500px",
-          minHeight: "700px",
+          height: "100vh",
           overflow: "hidden",
           backgroundImage: 'url("/img/bg4.gif")',
           backgroundSize: "cover",
