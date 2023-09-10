@@ -12,17 +12,20 @@
   font-family: 'myFont';
   src: url("genshin.ttf");
 }
+.title {
+    font-family: 'myFont';
+}
 .genshin {
   font-family:'myFont';
   text-align: center;
-
   width: 100%;
   font-size: 32px;
-  height: 100px;
-  line-height: 100px;
+  height: 70px;
+  line-height: 70px;
   background-color: #353e42;
   color: white;
   overflow: hidden;
+  margin-top: 20px;
  
 }
 *{

@@ -13,7 +13,7 @@ export default function Navbar() {
     <>
       <div
         style={{
-          height: "100vh",
+       
           overflow: "hidden",
           backgroundColor: "#353e42",
           marginTop: "-10px",
@@ -44,6 +44,7 @@ export default function Navbar() {
             </div>
           ))}
         </Carousel>
+
       </div>
     </>
   );
