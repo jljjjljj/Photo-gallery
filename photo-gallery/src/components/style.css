@@ -7,16 +7,24 @@
 /********************************************
 	COLOURS
 *******************************************?*/
+ @keyframes scroll {
+   0% {
+     transform: translateX(100%);
+   }
 
+   100% {
+     transform: translateX(-100%);
+   }
+ }
 @font-face {
-  font-family: 'myFont';
+  font-family: "myFont";
   src: url("genshin.ttf");
 }
 .title {
-    font-family: 'myFont';
+  font-family: "myFont";
 }
 .genshin {
-  font-family:'myFont';
+  font-family: "myFont";
   text-align: center;
   width: 100%;
   font-size: 32px;
@@ -26,11 +34,10 @@
   color: white;
   overflow: hidden;
   margin-top: 20px;
- 
 }
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 .carousel .control-arrow,
 .carousel.carousel-slider .control-arrow {
@@ -168,7 +175,7 @@
 
 .carousel .thumb.selected,
 .carousel .thumb:hover {
-border: 3px solid black;
+  border: 3px solid black;
 }
 
 .carousel .thumb img {

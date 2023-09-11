@@ -14,12 +14,26 @@ const Div = styled("div")(({ theme }) => ({
   ...theme.typography.button,
   backdropFilter: "blur(15px)",
   padding: theme.spacing(2),
-marginTop:'65px',
+  marginTop: "65px",
   textAlign: "center",
   fontSize: 40,
   fontWeight: 700,
   color: "white",
 }));
+
+const Buttonstart = styled(Button)({
+  width: "200px",
+  height: "60px",
+  fontSize: "18px",
+  backgroundColor: "#E91E63",
+  transition: "all 0.3s ease",
+  "&:hover": {
+    backgroundColor: "#fff",
+    borderColor: "#0062cc",
+    color: "#000",
+    transform: "scale(1.1)",
+  },
+});
 
 export default function Home() {
   const navigate = useNavigate();
@@ -34,7 +48,7 @@ export default function Home() {
           height: "100vh",
           overflow: "hidden",
           backgroundImage: 'url("/img/ass1.jpg")',
-          backgroundSize: "cover",
+          backgroundSize: "100% 100%",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
@@ -51,23 +65,14 @@ export default function Home() {
               marginTop: 20,
             }}
           >
-            <Button
-              variant="contained"
-              style={{
-                width: "200px",
-                height: "60px",
-                fontSize: "18px",
-                backgroundColor: "#E91E63",
-              }}
-              onClick={handleClick}
-            >
+            <Buttonstart variant="contained" onClick={handleClick}>
               <PlayCircleOutlineIcon
                 style={{
                   padding: 5,
                 }}
               />
               Start
-            </Button>
+            </Buttonstart>
           </div>
         </Container>
       </Container>
