@@ -1,13 +1,12 @@
 import Navbar from "../components/Navbar";
-import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 import "../components/style.css";
 export default function Show() {
   return (
     <div>
-      <Header />
+      <Sidebar />
       <p className="genshin"></p>
-
       <Navbar />
 
       <div
@@ -18,6 +17,7 @@ export default function Show() {
           position: "relative",
         }}
       >
+
         <div
           style={{
             margin: "5% auto",
