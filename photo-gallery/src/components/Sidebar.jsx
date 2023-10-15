@@ -18,7 +18,10 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+
+import SlowMotionVideoIcon from '@mui/icons-material/SlowMotionVideo';
+import InsertPhotoIcon from '@mui/icons-material/InsertPhoto';
+import ViewInArIcon from '@mui/icons-material/ViewInAr';
 
 import "../components/style.css";
 import { Button } from "@mui/material";
@@ -92,10 +95,9 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   justifyContent: "flex-end",
 }));
 const menuItems = [
-    { text: "Photo", path: "/show" },
+  { text: "Photo", path: "/show" },
   { text: "Video", path: "/video" },
-  { text: "开发中", path: "/" },
-  { text: "敬请期待", path: "/" },
+  { text: "Animation", path: "/animation" },
 ];
 
 export default function Sidebar() {
@@ -171,7 +173,18 @@ export default function Sidebar() {
             <ListItemhover key={index} disablePadding>
               <ListItemButton to={item.path}>
                 <ListItemIcon>
-                  <MailIcon style={{ color: "white" }} />
+                  {(() => {
+                    switch (item.text) {
+                      case "Photo":
+                        return <InsertPhotoIcon style={{ color: "white" }} />;
+                      case "Animation":
+                        return <ViewInArIcon style={{ color: "white" }} />;
+                      case "Video":
+                        return <SlowMotionVideoIcon style={{ color: "white" }} />;
+                      default:
+                        return null; // 如果文本不匹配任何情况，可以返回 null 或其他默认内容
+                    }
+                  })()}
                 </ListItemIcon>
                 <ListItemText primary={item.text} />
               </ListItemButton>

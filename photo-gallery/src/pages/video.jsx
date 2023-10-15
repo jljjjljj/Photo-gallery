@@ -3,20 +3,21 @@ import Sidebar from "../components/Sidebar";
 
 import "../components/style.css";
 import { Button } from "@mui/material";
-
+import MouseTrail from "../components/mouseTrail";
 
 
 export default function Video() {
 
   return (
     <>
-<Sidebar />
+      <Sidebar />
+      <MouseTrail />
       <div
         style={{
           display: "flex",
           justifyContent: "center",
           alignItems: "center",
-                  height: "100vh",
+          height: "100vh",
           backgroundColor:"#353e42"
         }}
       >

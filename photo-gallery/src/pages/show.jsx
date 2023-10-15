@@ -2,13 +2,14 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 import Footer from "../components/Footer";
 import "../components/style.css";
+import MouseTrail from "../components/mouseTrail";
 export default function Show() {
   return (
     <div>
       <Sidebar />
       <p className="genshin"></p>
       <Navbar />
-
+      <MouseTrail />
       <div
         style={{
           height: "40vh",

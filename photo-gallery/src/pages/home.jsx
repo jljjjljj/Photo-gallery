@@ -2,7 +2,10 @@ import { useNavigate } from "react-router-dom";
 import { Container, Box, Typography, Button } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { styled } from "@mui/material/styles";
+import MouseTrail from "../components/mouseTrail";
 import PlayCircleOutlineIcon from "@mui/icons-material/PlayCircleOutline";
+
+
 const defaultTheme = createTheme();
 const dividerStyle = {
   display: "flex",
@@ -42,6 +45,7 @@ export default function Home() {
   };
   return (
     <ThemeProvider theme={defaultTheme}>
+   <MouseTrail />
       <Container
         maxWidth="xl"
         style={{
